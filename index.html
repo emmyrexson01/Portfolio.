@@ -1,60 +1,68 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
-<head><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel David Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Emmanuel David - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <h1>Welcome to My Portfolio</h1>
     </header>
-    <section id="about">
+
+    <section class="about">
         <h2>About Me</h2>
         <p>Hi! I am Emmanuel David, a content writer and aspiring web developer. I am passionate about creating quality content and building intuitive websites.</p>
-    </section><section id="skills">
-  <h2>My Skills</h2>
-  <div class="skills-container">
-    <div class="skill">
-      <i class="fa fa-pencil-alt"></i>
-      <h3>Content Writing</h3>
-      <p>Creating high-quality and engaging content for websites and blogs.</p>
-    </div>
-    <div class="skill">
-      <i class="fa fa-code"></i>
-      <h3>HTML & CSS</h3>
-      <p>Building intuitive and responsive web pages.</p>
-    </div>
-    <div class="skill">
-      <i class="fa fa-laptop-code"></i>
-      <h3>JavaScript</h3>
-      <p>Developing interactive features and dynamic content.</p>
-    </div>
-  </div>
     </section>
-    <section id="projects">
+
+    <section class="projects">
         <h2>My Projects</h2>
         <div class="project">
             <h3>Project 1: Portfolio Website</h3>
             <p>A personal portfolio website to showcase my skills and projects.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project 2: Blog Template</h3>
-            <p>A modern blog template designed for writers and bloggers.</p>
-            <a href="#">View Project</a>
         </div>
     </section>
-    <section id="contact">
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Content Writing & SEO</li>
+            <li>Responsive Web Design</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Emmanuel's work is outstanding. His attention to detail is second to none." - Client A</p>
+        </blockquote>
+    </section>
+
+    <section class="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>How to Write Engaging Content</h3>
+            <p>Discover tips and tricks to captivate your audience with compelling content...</p>
+        </article>
+    </section>
+
+    <section class="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:emmyrexson@gmail.com">emmyrexson@gmail.com</a></p>
-        <p>Phone: +2348108132851</p>
+        <form action="mailto:emmyrexson@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
+
     <footer>
-        <p>&copy; 2025 Emmanuel David. All rights reserved.</p>
+        <p>&copy; 2025 Emmanuel David | <a href="https://github.com/emmyrexson01">GitHub</a></p>
     </footer>
 </body>
 </html>
